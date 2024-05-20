@@ -30,7 +30,7 @@ const Hero = () => {
           variants={navbar}
           transition={{ duration: 2 }}
         >
-        <div className="h-[4rem] flex justify-between items-center w-full  max-sm:gap-[56px]">
+        <div className="h-[4rem] flex justify-between items-center w-full max-sm:gap-[10px] ">
           <img
           src={Logo}
           
@@ -39,10 +39,10 @@ const Hero = () => {
             alt="Logo"
             className="max-sm:w-20"
           />
-          <div className="text-white flex gap-10 mr-[8rem] max-sm:gap-5 text-sm ">
+          <div className="text-white flex gap-10 sm:mr-[8rem] max-sm:gap-2 text-sm max-sm:text-[0.615rem] ">
             <p>ABOUT US</p>
             <p>CONTACT US</p>
-            <img src={Group} width={60} height={60} alt="Logo" />
+            <img src={Group} width={60} height={60} alt="Logo" className="max-sm:mt-[-5px]" />
           </div>
         </div></motion.div>
       </div>
