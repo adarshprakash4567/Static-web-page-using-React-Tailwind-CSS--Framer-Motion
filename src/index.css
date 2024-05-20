@@ -1,13 +1,33 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: 'Retake';
+  src: url('../src//assets//Font//Retake.ttf') format('opentype');
+  /* Include additional font weights and styles as needed */
+}
+@font-face {
+  font-family: 'Airbnb';
+  src: url('../src/assets/Font/Airbnb.otf') format('opentype');
+  /* Include additional font weights and styles as needed */
+}
+/* Apply the font to specific elements */
+.font-retake {
+  font-family: 'Retake', sans-serif;
+}
+.font-airbnb {
+  font-family: 'Airbnb', sans-serif;
+}
+/* Assuming you are using Sass */
+.text-gradient {
+
+
+  background: linear-gradient(100.47deg, #C327BC 0%, #C327BC 13.04%, #f03333 155.52%, #00FAFE 90%, #00FAFE 100%);
+
+  
+  /* background: linear-gradient(100.47deg, #C327BC 0%, #691f66 13.04%, #333CF0 55.52%, #00FAFE 90%, #00FAFE 100%); */
+  -webkit-background-clip: text; /* for WebKit browsers */
+  background-clip: text;
+  color: transparent;
 }
