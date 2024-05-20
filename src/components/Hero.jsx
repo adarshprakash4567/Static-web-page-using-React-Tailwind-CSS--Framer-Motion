@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
-// import a from '../assets'
+
 import BannerImg from "../assets/Banner.png";
+import Logo from "../assets/Logo2.png";
 import Sideline from "../assets/Sideline.png";
 import Group from "../assets/Group.png";
 import { motion, useAnimation } from "framer-motion";
@@ -31,6 +32,7 @@ const Hero = () => {
         >
         <div className="h-[4rem] flex justify-between items-center w-full  max-sm:gap-[56px]">
           <img
+          src={Logo}
           
             width={120}
             height={120}
